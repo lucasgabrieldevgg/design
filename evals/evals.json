@@ -1,0 +1,76 @@
+{
+  "skill_name": "design",
+  "evals": [
+    {
+      "id": 1,
+      "name": "de-slop-dashboard",
+      "prompt": "my SaaS dashboard looks like every AI-generated app - dark background with purple gradient glows in the corners, three identical feature cards, emoji icons, and uppercase labels like OVERVIEW everywhere. fix it",
+      "expected_output": "DE-SLOP mode: recognizes the banned-trope hits (gradient blobs, 3-card grid, emoji icons, screaming eyebrows) AND checks structural sameness (is the skeleton also the SaaS-hero template?). Returns a ranked punch list (HIGH first), picks one archetype with tokens (e.g., Quiet Luxury SaaS), prescribes grouped batches. Runs the Design Read before prescribing. Never mixes restyle with behavior changes.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "name": "create-landing-structural-variety",
+      "prompt": "build a landing page for my freight-dispatch SaaS - but please don't make it look like the generic AI sites, I want it to feel like a real company built it",
+      "expected_output": "CREATE mode: Design Read first (freight dispatchers, chosen world, dials, macrostructure family). Offers three contrasting directions from categorically different macrostructure families per the domain trio (B2B platform: Bento Grid / Workbench / Stat-Led), text descriptions before pixels. Likely Technical Terminal world - not default purple SaaS. No gradient blobs, no 3-card grids; tabular numerals; 8-state buttons; real dispatch-domain copy ('Track a load', not 'Transform your logistics').",
+      "files": []
+    },
+    {
+      "id": 3,
+      "name": "restyle-behavior-preservation",
+      "prompt": "make my existing React app look more professional - it works fine, it just looks like a template. here's the repo",
+      "expected_output": "RESTYLE mode: states the behavior-preservation hard contract up front (interactive logic, form state, data handlers survive; bugs found mid-restyle get flagged, never fixed in the same diff). Inventory of design variables/components first, baseline screenshot, fixes at the token source not per-page patches. Typography/color/spacing/motion passes from the craft references. One batched verification render.",
+      "files": []
+    },
+    {
+      "id": 4,
+      "name": "study-dna-extraction",
+      "prompt": "I love this site (pastes a screenshot of an editorial portfolio with serif display type and marginalia). Can you make my project feel like this?",
+      "expected_output": "STUDY mode: extracts the DNA (macrostructure: Long Document/letter-led; fingerprint axes: hanging headings, marginalia body, hairline dividers, typographic-only CTAs; archetype: Editorial Refined; type pairing: serif display + Newsreader-class body; motion stance: near-static). Diagnoses what it would cost to run (type licensing, density, imagery appetite). Offers the three follow-ups: rebuild user's content in the DNA, lock a design.md, or stop at diagnosis. Never copies pixels; never treats a vibe word as a direction.",
+      "files": []
+    },
+    {
+      "id": 5,
+      "name": "typography-budget-discipline",
+      "prompt": "my settings page has 6 different font sizes and 3 different fonts - a designer friend said it looks messy. what's wrong?",
+      "expected_output": "Applies typography.md: the font budget (2 families / 3 sizes / 2 weights per screen), the three-layer rule (one primary per screen), the decision table (heading-vs-body = size; label-vs-value = color; reaching for a new size is usually a spacing problem). Prescribes consolidation to the budget with the squint test as the acceptance check.",
+      "files": []
+    },
+    {
+      "id": 6,
+      "name": "structural-sameness-diagnosis",
+      "prompt": "I've built 4 landing pages with the agent this month and they all feel the same even though the colors are different. why?",
+      "expected_output": "Diagnoses structural sameness: all four likely share the SaaS-hero skeleton (centered display heading, 3-feature row, benefits-then-CTA, carbon-copy footer, everything-fades-in) - the AI fingerprint is structural, not visual. Introduces the six-axis fingerprint and the anti-repetition rule (consecutive pages differ on >= 3 axes), and the macrostructure families with domain trios for the next builds.",
+      "files": []
+    },
+    {
+      "id": 7,
+      "name": "motion-frequency-matrix",
+      "prompt": "should I add a nice fade-in animation when users select rows in my data grid? and my command palette takes 400ms to appear, feels sluggish",
+      "prompt_note": "tests duration-by-frequency",
+      "expected_output": "Row selection at 100+/day frequency: 0ms, never animate - speed is the feature. Command palette likewise 0ms (it's the highest-frequency surface in the app). Standard interactions 120-180ms, modals 200-250ms. Also flags: no ease-in, tense ease-out, press feedback scale(0.97), prefers-reduced-motion variant required.",
+      "files": []
+    },
+    {
+      "id": 8,
+      "name": "color-surface-stack",
+      "prompt": "my dark app looks flat - everything is the same #1a1a1a with gray text and I can't tell cards from the background",
+      "expected_output": "Applies color-surfaces.md: four-level surface hierarchy (canvas darkest -> surface step up with hairline border -> overlay/hover with border brightening -> elevated with real shadow), two ink steps minimum, one accent. Fixes at the token source. Also checks the flat-gray-on-dark trap (text steps zinc-100 -> zinc-400, never one flat gray).",
+      "files": []
+    },
+    {
+      "id": 9,
+      "name": "design-sources-copy-and-suggest",
+      "prompt": "I'm building a marketing site with shadcn and I have no design direction. Can you find me some components I can actually copy - and maybe some sites to look at for inspiration?",
+      "expected_output": "Separates the two asks: at most 2 code sources matched to the shadcn stack (e.g., Magic UI, Animate UI) with license labels stated, and 2-3 look-only galleries matched to the no-direction signal, asking the user to pick what resonates. Under 5 links total. If copying proceeds: license checked, mechanics lifted not identity, re-skinned to archetype tokens, provenance line in the commit.",
+      "files": []
+    },
+    {
+      "id": 10,
+      "name": "gate-sweep-before-shipping",
+      "prompt": "done! here's the final page - can you just double check it looks good before I deploy?",
+      "expected_output": "Runs design-gates.md: the six-axis self-critique first (any axis < 3 revises), then the deterministic sweep (grep facts: no gradient-clip text, no transition:all, no bare outline:none, every img has alt+aspect-ratio), then the 7-axis gate scored >= 4 each, checked against an actual render at 100% and 200% - not from reading the code. One pass, one fix batch, one confirm. Ends with the final assertion question; no endless polishing.",
+      "files": []
+    }
+  ]
+}

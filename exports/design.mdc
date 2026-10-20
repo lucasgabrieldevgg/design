@@ -1,0 +1,63 @@
+---
+description: design — visual craft for AI-built interfaces. Apply when building, restyling, auditing, or studying any UI, especially to remove the generated/template look.
+globs:
+alwaysApply: true
+---
+
+# design (Cursor rules export)
+
+The test: a working designer opens the result and cannot tell the model made it. One committed visual world, structure that follows content, hierarchy visible from across the room, nothing decorative that is not structural.
+
+## The two fingerprints to kill
+
+1. **Visual tropes:** purple/indigo gradient blobs and gradient-clip text · emoji as icons · three-identical-card grids · screaming uppercase eyebrows · centered-everything heroes · vanity stats · dead placeholders · glassmorphism everywhere · puffy halo shadows · unmodified Inter as the whole type system · mono-as-costume · same fade on everything.
+2. **Structural sameness (the deeper tell):** hero → 3-feature row → CTA → carbon-copy footer, everything fades in. Fix with a six-axis structural fingerprint — heading placement, body composition, divider language, button voice, image treatment, reveal pattern — one pick per axis, coherent within a world, differing from sibling pages on ≥ 3 axes.
+
+## Always start with the Design Read
+
+`Design Read: building [artifact] for [audience], in [visual world], dials [V/M/D], structure [macrostructure family].` The Three Dials: VARIANCE (enterprise symmetry → studio collisions), MOTION (near-static admin → cinematic), DENSITY (gallery whitespace → trading terminal). A dispatch tool at V=9 is wrong; a portfolio at V=2 is wrong.
+
+## Create flow (spec first)
+
+Understand (flexible input: URL/screenshot/keywords/PRD) → DESIGN.md spec (intent, Read, tokens, structure, content inventory, non-goals; user confirms before code) → **three contrasting directions from different macrostructure families, text before pixels** (3–4 lines each; user picks from text or sees three rendered above-the-folds with the same copy) → build on the chosen one (real content, 8-state primitives as built) → evidence (screenshot at target viewport, 100% + 200%, whole-page scroll) → independent review when available (fresh reviewer, one fix pass) → subtraction pass (one protagonist per screen; delete repeated explanations) → gates.
+
+## The five worlds (pick one, commit)
+
+A Quiet Luxury SaaS (Linear: `#09090b` canvas, cobalt accent, one primary per viewport) · B Technical Dense Terminal (GitHub/Bloomberg: emerald status, amber alerts only, tabular numbers) · C Editorial Refined (Stripe Press: ink is the accent, serif display, near-zero radius) · D Warm Tactile (Teenage Engineering: ochre, radii 8–24px, photography-forward) · E Monochrome Industrial (Nothing: color is an event not a default; Space Grotesk/Mono; both modes first-class).
+
+## Typography discipline
+
+Three-layer hierarchy (one primary per screen, squint test) · budget: 2 families / 3 sizes / 2 weights per screen — a new size is usually a spacing problem · scale: display 36–72px lh 1.05–1.1 tracking −0.03em; body 14–16px lh 1.6; meta 12–13px · negative tracking on large sans · measure ≤ 75ch · `tabular-nums` on every metric · pair with character (`Fraunces`+`Plus Jakarta Sans`, `Space Grotesk`+`Inter Tight`) and self-host the display face.
+
+## Color and surfaces
+
+OKLCH tokens (paper band, two ink steps, ONE accent with C ≥ 0.15 for focus rings, rule color one hover-step) · four surface levels (canvas → surface → overlay → elevated; blur only on floating chrome) · 8pt spacing ladder only; nested radius `inner = outer − padding`; more space above headings than below · shadows carry offset + blur, no halos · contrast floor 4.5:1/3:1 · theme the browser surfaces (selection, caret, scrollbars, focus rings) — ten lines that read *built*.
+
+## Motion and states
+
+Duration by frequency: 100+/day actions **0ms never animate**; tooltips 120–180ms; modals 200–250ms · no `ease-in`; tense ease-out `cubic-bezier(0.23,1,0.32,1)`; popovers scale from their trigger · press feedback `scale(0.97)` 60ms · one authored entrance moment, stagger 50–80ms · `prefers-reduced-motion` always honored · every primitive ships all 8 states (default/hover/focus-visible/active + disabled/loading/error/success) with real labels and errors that name problem + recovery.
+
+## Before claiming done
+
+Self-critique 1–5 on six axes (philosophy, hierarchy, execution, specificity, restraint, variety) — any axis < 3 revises first. Then the 7-axis gate ≥ 4 each: anti-slop purity · UX speed & 1-to-3 · typographic discipline · spacing geometry · motion & states · accessibility · structural variety. Deterministic sweep first (grep the facts: no gradient-clip text, no `transition: all`, no bare `outline:none`, every img has alt+aspect-ratio) — objective before judgment. One rendering pass, one fix batch, one confirm, stop. Final assertion: *crafted with respect for the user's attention, or generated from a prompt?* Eliminate prompt-slop, don't soften it. Then ship and stop polishing.
+
+## Copying discipline (from the sources catalog)
+
+License before likeness · copy mechanics, not identity (re-skin to archetype tokens) · popular = dangerous: one lift per source per project, must pass the matrix after calibration · pasted code passes the same gates and gets a security read · provenance line in the commit: `adapted from {source} ({license})`.
+
+## Sources & attribution
+
+This file is the Cursor-rules export of the `design` skill — an original synthesis (MIT for the synthesis; upstream material keeps its own licenses). It merges material from:
+
+- `Nutlope/hallmark` (MIT — structural fingerprint, macrostructures, slop-test, design.md format, study/DNA flow)
+- `wwewtech/anti-slop-design` (MIT — banned-trope matrix, archetypes, 8-state system, 7-axis gate, UX axioms)
+- `shinewinsu/vibe-frontend-design` (Design Read, Three Dials, typography engineering)
+- `dominikmartn/nothing-design-skill` (MIT — three-layer rule, font budget, monochrome discipline)
+- `oil-oil/oil-ui` (MIT — direction exploration, evidence discipline, independent review, subtraction pass)
+- `xiaopu-ai/web-design` (MIT — spec-first DESIGN.md workflow)
+- `Gesso-Build/skills` anti-slop (MIT — deterministic guard sweep)
+- `shahrukh-hack/vibe-superkit` (taste guide, micro-interactions)
+- `pbakaus/impeccable` (Apache 2.0 — craft-floor, bounded verification)
+- Motion principles by **Emil Kowalski** (emilkowalski.dev)
+
+Full per-source credits and licenses: `ATTRIBUTION.md` in the `design` repo. Keep this section when redistributing.
